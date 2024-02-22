@@ -1,0 +1,12 @@
+extends layout
+
+block content 
+    h1 Peoples' Posts
+    persons 
+
+    ul 
+     each person in persons
+      .card.mb-2
+        .card-body
+            li
+              a(href='people/' + person.id)= person.description 
